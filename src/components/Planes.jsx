@@ -13,7 +13,7 @@ const plans = [
     name: 'Emprendedor',
     tag: 'Negocios con ventas anuales de hasta S/ 100,000. Máximo 50 comprobantes por mes.',
     price: '170',
-    cta: { label: 'Empezar ahora', cls: 'btn-ghost', msgEnv: 'VITE_WA_MSG_EMPR' },
+    cta: { label: 'Elegir plan', cls: 'btn-ghost', msgEnv: 'VITE_WA_MSG_EMPR' },
     meta: 'Ventas anuales hasta S/100,000',
     features: [
       'Sólo Régimen Especial',
@@ -28,7 +28,7 @@ const plans = [
     name: 'MYPE Plata',
     tag: 'Negocios con ventas anuales de hasta S/ 250,000. Máximo 150 comprobantes por mes.',
     price: '270',
-    cta: { label: 'Empezar ahora', cls: 'btn-navy', msgEnv: 'VITE_WA_MSG_PLATA' },
+    cta: { label: 'Elegir plan', cls: 'btn-navy', msgEnv: 'VITE_WA_MSG_PLATA' },
     meta: 'Ventas anuales hasta S/250,000',
     features: [
       'Todos los Regímenes Tributarios',
@@ -47,7 +47,7 @@ const plans = [
     name: 'MYPE Oro',
     tag: 'Negocios con ventas anuales de hasta S/ 350,000. Máximo 250 comprobantes por mes.',
     price: '370',
-    cta: { label: 'Empezar ahora', cls: 'btn-coral', msgEnv: 'VITE_WA_MSG_ORO' },
+    cta: { label: 'Elegir plan', cls: 'btn-coral', msgEnv: 'VITE_WA_MSG_ORO' },
     meta: 'Ventas anuales hasta S/350,000',
     features: [
       'Todos los Regímenes Tributarios',
@@ -66,7 +66,7 @@ const plans = [
     name: 'MYPE Diamante',
     tag: 'Negocios con ventas anuales de hasta S/ 500,000. Máximo 400 comprobantes por mes.',
     price: '700',
-    cta: { label: 'Empezar ahora', cls: 'btn-navy', msgEnv: 'VITE_WA_MSG_DIAM' },
+    cta: { label: 'Elegir plan', cls: 'btn-navy', msgEnv: 'VITE_WA_MSG_DIAM' },
     meta: 'Ventas anuales hasta S/500,000',
     features: [
       'Todos los Regímenes Tributarios',

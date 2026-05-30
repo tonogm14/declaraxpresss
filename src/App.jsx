@@ -2,15 +2,16 @@ import Analytics from './components/Analytics';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import LogosBand from './components/LogosBand';
 import Somos from './components/Somos';
-import Propuesta from './components/Propuesta';
 import Proceso from './components/Proceso';
+import Pasos from './components/Pasos';
+import Cita from './components/Cita';
 import Sync from './components/Sync';
 import Planes from './components/Planes';
-import Servicios from './components/Servicios';
 import Formaliza from './components/Formaliza';
 import Sunat from './components/Sunat';
+import OtrosServicios from './components/OtrosServicios';
+import Testimonios from './components/Testimonios';
 import CtaBand from './components/CtaBand';
 import Footer from './components/Footer';
 
@@ -20,15 +21,16 @@ export default function App() {
       <Analytics />
       <Nav />
       <Hero />
-      <LogosBand />
       <Somos />
-      <Servicios />
-      <Propuesta />
+      <Cita />
       <Proceso />
       <Sync />
       <Planes />
+      <Pasos />
       <Formaliza />
       <Sunat />
+      <OtrosServicios />
+      <Testimonios />
       <CtaBand />
       <Footer />
       <WhatsAppFloat />

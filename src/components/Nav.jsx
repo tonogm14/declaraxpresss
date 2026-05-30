@@ -1,19 +1,25 @@
+import { useState, useEffect } from 'react';
 import { waUrl } from '../utils/whatsapp';
 
 export default function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <nav className="nav">
+    <nav className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
       <div className="nav-inner">
         <a className="nav-logo" href="#top" aria-label="Declara Xpress">
-          <span className="nav-logo-pill">
-            <img className="nav-logo-img" src="/assets/declara-xpress-logo.png" alt="Declara Xpress" />
-          </span>
+          <img className="nav-logo-img" src="/assets/declara-xpress-logo.png" alt="Declara Xpress" />
         </a>
         <div className="nav-links">
           <a href="#somos">Nosotros</a>
           <a href="#proceso">Proceso</a>
           <a href="#planes">Planes</a>
-          <a href="#servicios">Servicios</a>
           <a href="#contacto">Contacto</a>
         </div>
         <div className="nav-cta">

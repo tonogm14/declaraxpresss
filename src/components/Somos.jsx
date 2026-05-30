@@ -1,46 +1,17 @@
-const valueCards = [
-  {
-    cls: 'peach',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: 'Cumplimiento total',
-    body: 'Declaraciones puntuales ante SUNAT y SUNAFIL todo el año.',
-  },
-  {
-    cls: 'lavender',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: 'Auditoría IA 24/7',
-    body: 'Tus libros revisados en tiempo real para evitar contingencias.',
-  },
-  {
-    cls: 'lime',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M3 11l9-8 9 8M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: 'Riesgo controlado',
-    body: 'Detectamos contingencias antes de que se conviertan en multas.',
-  },
-  {
-    cls: 'sky',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: 'Acompañamiento real',
-    body: 'Un contador asignado y WhatsApp directo. Sin call-centers.',
-  },
+const items = [
+  'Registros contables y tributarios al día',
+  'Información en línea',
+  'Informe de impuestos mensuales',
+  'Declaración oportuna de impuestos SUNAT',
+  'ERP contable con IA y sistema SIRE con certificación de ciberseguridad',
+  'Honorarios a la medida de tu negocio',
 ];
+
+const CheckIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+    <path d="M5 12l5 5L20 7" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 
 export default function Somos() {
   return (
@@ -62,24 +33,18 @@ export default function Somos() {
         </div>
 
         <div className="somos-r">
-          <span className="eyebrow"><span className="dot"></span>Quiénes somos</span>
-          <h2>Auditoría <em>&amp;</em> tranquilidad para tu negocio.</h2>
+          <span className="eyebrow"><span className="dot"></span>¿Por qué elegirnos?</span>
+          <h2>Somos un equipo con <em>experiencia</em> que quiere ser parte de tu éxito.</h2>
           <p className="body">
-            No somos solo un estudio contable con IA. Somos aliados para ayudarte a formalizar,
-            cumplir y crecer. Combinamos experiencia tributaria, automatización y acompañamiento práctico.
+            Queremos colaborar con tu empresa y ser parte de tu éxito, asegurandote una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT.
           </p>
-          <div className="value-cards">
-            {valueCards.map(({ cls, icon, title, body }) => (
-              <div key={title} className={`value-card ${cls}`}>
-                <div className="ic">{icon}</div>
-                <h4>{title}</h4>
-                <p>{body}</p>
-              </div>
+          <ul className="somos-items">
+            {items.map(item => (
+              <li key={item}><CheckIcon />{item}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
-
     </section>
   );
 }
