@@ -22,7 +22,7 @@ export default function Sunat() {
     <section className="sunat-alert">
       <div className="container sunat-inner">
         <div className="sunat-img">
-          <img src="/assets/team-photo.png" alt="Defensa tributaria SUNAT" />
+          <img src="/assets/sunat.jpg" alt="Defensa tributaria SUNAT" />
         </div>
         <div className="sunat-r">
           <span className="eyebrow"><span className="dot"></span>Defensa tributaria</span>

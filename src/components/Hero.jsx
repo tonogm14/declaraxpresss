@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <header className="hero" id="top">
       <div className="hero-bg">
-        <img src="/assets/hero.png" alt="" className="hero-bg-img" />
+        <img src="/assets/hero.jpg" alt="" className="hero-bg-img" />
         <div className="hero-overlay"></div>
       </div>
       <div className="hero-inner">

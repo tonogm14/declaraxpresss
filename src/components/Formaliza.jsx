@@ -24,7 +24,7 @@ export default function Formaliza() {
     <section className="formaliza">
       <div className="container formaliza-inner">
         <div className="formaliza-img">
-          <img src="/assets/team-photo.png" alt="Constituye tu empresa hoy" />
+          <img src="/assets/formaliza.jpg" alt="Constituye tu empresa hoy" />
         </div>
         <div className="formaliza-r">
           <span className="eyebrow eyebrow--on-dark"><span className="dot"></span>Constitución de empresas</span>

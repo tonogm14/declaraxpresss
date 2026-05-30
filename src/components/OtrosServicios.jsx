@@ -25,7 +25,7 @@ export default function OtrosServicios() {
     <section className="otros-serv">
       <div className="container otros-serv-inner">
         <div className="otros-serv-img">
-          <img src="/assets/team-photo.png" alt="Otros Servicios Contables" />
+          <img src="/assets/otros-servicios.jpg" alt="Otros Servicios Contables" />
         </div>
         <div className="otros-serv-r">
           <span className="eyebrow"><span className="dot"></span>Servicios adicionales</span>
