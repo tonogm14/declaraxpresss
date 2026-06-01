@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-copy">
-        <p>Contabilidad inteligente con IA. Precisión, integridad y estrategia para tu negocio.</p>
+        <p>Contabilidad inteligente con IA.<br/>Precisión, integridad y estrategia para tu negocio.</p>
         <p>© 2026 Declara Xpress · Todos los derechos reservados.</p>
       </div>
       <p className="footer-wordmark">DECLARAXPRESS</p>
