@@ -76,7 +76,8 @@ export default function Testimonios() {
   };
 
   return (
-    <section className="testi container">
+    <section className="testi">
+      <div className="container">
       <div className="testi-head">
         <h3>¿Qué opinan <em>de nosotros</em>?</h3>
         <p>Conoce lo que dicen nuestros clientes sobre el servicio, el soporte y el éxito que han alcanzado.</p>
@@ -115,6 +116,7 @@ export default function Testimonios() {
             <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
+      </div>
       </div>
     </section>
   );
