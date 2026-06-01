@@ -67,7 +67,7 @@ export default function Testimonios() {
     <section className="testi container">
       <div className="testi-head">
         <span className="eyebrow"><span className="dot"></span>Testimonios</span>
-        <h2>¿Qué opinan <em>de nosotros</em>?</h2>
+        <h3>¿Qué opinan <em>de nosotros</em>?</h3>
         <p>Conoce lo que dicen nuestros clientes sobre el servicio, el soporte y el éxito que han alcanzado.</p>
       </div>
 

@@ -980,7 +980,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    ========================================================= */
 .testi { padding: 100px 0 100px; }
 .testi-head { text-align: center; margin-bottom: 56px; }
-.testi-head h2 {
+.testi-head h2, .testi-head h3 {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(36px, 4.4vw, 58px);
@@ -989,7 +989,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   margin: 14px 0 12px;
   color: var(--navy);
 }
-.testi-head h2 em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: var(--coral); }
+.testi-head h2 em, .testi-head h3 em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: var(--coral); }
 .testi-head p { font-size: 16.5px; color: var(--ink-500); max-width: 50ch; margin: 0 auto; }
 
 .testi-carousel-wrap { overflow: hidden; margin-bottom: 28px; }
@@ -1045,7 +1045,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
   align-items: center;
 }
-.cita-l h2 {
+.cita-h, .cita-l h2 {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(36px, 4.5vw, 64px);
@@ -1118,7 +1118,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    CTA / CONTACTO
    ========================================================= */
 .cta-band {
-  padding: 100px 0;
+  padding: 100px 0 48px;
   background: var(--navy);
   color: #fff;
 }
@@ -1129,9 +1129,9 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   gap: 32px 80px;
   align-items: start;
 }
-.contacto-info   { grid-column: 1; grid-row: 1; }
+.contacto-info      { grid-column: 1; grid-row: 1; align-self: start; }
 .contacto-form-wrap { grid-column: 2; grid-row: 1 / 3; }
-.contacto-mapa-inline { grid-column: 1; grid-row: 2; }
+.contacto-mapa-inline { grid-column: 1; grid-row: 2; align-self: stretch; }
 
 /* Info izquierda */
 .contacto-info .eyebrow { margin-bottom: 16px; }
@@ -1144,11 +1144,18 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   margin: 0 0 28px;
 }
 .contacto-mapa-inline {
-  margin-top: 8px;
+  margin-top: 4px;
   border-radius: var(--r-md);
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+.contacto-mapa-inline iframe {
   flex: 1;
+  height: 100%;
+  min-height: 300px;
 }
 .contacto-info h2 {
   font-family: var(--font-display);
@@ -1160,7 +1167,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   margin: 0 0 32px;
 }
 .contacto-info h2 em { font-style: italic; font-weight: 400; color: var(--coral-300); }
-.contacto-datos { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-direction: column; gap: 18px; }
+.contacto-datos { list-style: none; padding: 0; margin: 0 0 4px; display: flex; flex-direction: column; gap: 18px; }
 .contacto-datos li {
   display: flex; align-items: flex-start; gap: 12px;
   font-size: 15px; line-height: 1.5; color: rgba(255,255,255,0.78);
@@ -1234,7 +1241,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .footer {
   background: var(--navy);
   color: #fff;
-  padding: 28px 0 0;
+  padding: 12px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -1264,7 +1271,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   letter-spacing: 0.08em;
   line-height: 1;
   text-align: center;
-  color: #0A2A66;
+  color: rgba(255,255,255,0.5);
   margin: 0; padding: 16px 0 12px;
   white-space: nowrap; overflow: hidden;
   user-select: none;

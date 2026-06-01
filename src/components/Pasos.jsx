@@ -23,7 +23,7 @@ export default function Pasos() {
   return (
     <section className="pasos">
       <div className="container pasos-inner">
-        <h2 className="pasos-title">3 simples pasos para <em>trabajar juntos</em>.</h2>
+        <h3 className="pasos-title">3 simples pasos para <em>trabajar juntos</em>.</h3>
         <div className="pasos-row">
           {pasos.map(({ num, color, title, desc }, i) => (
             <div key={num} className="paso">

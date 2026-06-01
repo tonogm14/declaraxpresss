@@ -32,7 +32,6 @@ export default function Formaliza() {
           <img src="/assets/formaliza.jpg" alt="Constituye tu empresa hoy" />
         </div>
         <div className="formaliza-r">
-          <span className="eyebrow eyebrow--on-dark"><span className="dot"></span>Constitución de empresas</span>
           <h3 className="sec-sub">Formaliza fácil y rápido sin moverte de tu negocio.</h3>
           <p className="formaliza-precio">Desde <strong>S/ 370</strong> — Te asesoramos en:</p>
           <ul className="formaliza-list">
