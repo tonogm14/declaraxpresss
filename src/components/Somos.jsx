@@ -36,7 +36,6 @@ export default function Somos() {
         </div>
 
         <div className="somos-r">
-          <span className="eyebrow"><span className="dot"></span>¿Por qué elegirnos?</span>
           <h3 className="somos-sub">Somos un equipo con <em>experiencia</em> que quiere ser parte de tu éxito.</h3>
           <p className="body">
             Queremos colaborar con tu empresa y ser parte de tu éxito, asegurandote una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT.
