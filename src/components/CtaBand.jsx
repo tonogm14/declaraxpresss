@@ -99,7 +99,7 @@ export default function CtaBand() {
             <iframe
               title="Ubicación Declara Xpress"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.052!2d-77.09390!3d-12.07918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9b7c8a4b9b9%3A0x1!2sJr.+Pucala+292%2C+San+Miguel+15086%2C+Peru!5e0!3m2!1ses-419!2spe!4v1"
-              width="100%" height="220" style={{ border: 0, display: 'block' }}
+              width="100%" height="100%" style={{ border: 0, display: 'block', minHeight: '240px' }}
               allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
             />
           </div>

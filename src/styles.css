@@ -1124,7 +1124,10 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .contacto-grid {
   display: grid; grid-template-columns: 1fr 1.3fr; gap: 80px;
-  align-items: start;
+  align-items: stretch;
+}
+.contacto-info {
+  display: flex; flex-direction: column;
 }
 
 /* Info izquierda */
@@ -1142,6 +1145,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   border-radius: var(--r-md);
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
+  flex: 1;
 }
 .contacto-info h2 {
   font-family: var(--font-display);
