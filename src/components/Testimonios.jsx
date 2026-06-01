@@ -65,6 +65,16 @@ export default function Testimonios() {
   const prev = () => setIdx(i => Math.max(0, i - 1));
   const next = () => setIdx(i => Math.min(maxIdx(), i + 1));
 
+  const touchStart = useRef(null);
+  const onTouchStart = (e) => { touchStart.current = e.touches[0].clientX; };
+  const onTouchEnd   = (e) => {
+    if (touchStart.current === null) return;
+    const diff = touchStart.current - e.changedTouches[0].clientX;
+    if (diff > 40) next();
+    else if (diff < -40) prev();
+    touchStart.current = null;
+  };
+
   return (
     <section className="testi container">
       <div className="testi-head">
@@ -72,7 +82,7 @@ export default function Testimonios() {
         <p>Conoce lo que dicen nuestros clientes sobre el servicio, el soporte y el éxito que han alcanzado.</p>
       </div>
 
-      <div className="testi-carousel-wrap" ref={wrapRef}>
+      <div className="testi-carousel-wrap" ref={wrapRef} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         <div
           className="testi-carousel-track"
           style={{ transform: `translateX(-${idx * step}px)` }}

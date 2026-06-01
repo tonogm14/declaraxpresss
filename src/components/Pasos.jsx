@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const pasos = [
   {
@@ -27,6 +27,16 @@ export default function Pasos() {
   const next = () => setIdx(i => Math.min(pasos.length - 1, i + 1));
   const { num, color, title, desc } = pasos[idx];
 
+  const touchStart = useRef(null);
+  const onTouchStart = (e) => { touchStart.current = e.touches[0].clientX; };
+  const onTouchEnd   = (e) => {
+    if (touchStart.current === null) return;
+    const diff = touchStart.current - e.changedTouches[0].clientX;
+    if (diff > 40) next();
+    else if (diff < -40) prev();
+    touchStart.current = null;
+  };
+
   return (
     <section className="pasos" id="pasos">
       <div className="container pasos-inner">
@@ -45,7 +55,7 @@ export default function Pasos() {
         </div>
 
         {/* Mobile — slider */}
-        <div className="pasos-slider">
+        <div className="pasos-slider" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
           <div className="paso paso--slide">
             <div className={`paso-circle paso-circle--${color}`}>{num}</div>
             <p className="paso-label">{title}</p>
