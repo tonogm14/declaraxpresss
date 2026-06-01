@@ -20,6 +20,7 @@ export default function Nav() {
           <a href="#somos">Nosotros</a>
           <a href="#proceso">Proceso</a>
           <a href="#planes">Planes</a>
+          <a href="#otros-servicios">Servicios</a>
           <a href="#contacto">Contacto</a>
         </div>
         <div className="nav-cta">

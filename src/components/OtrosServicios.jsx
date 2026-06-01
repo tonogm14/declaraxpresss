@@ -22,7 +22,7 @@ const CheckIcon = () => (
 
 export default function OtrosServicios() {
   return (
-    <section className="otros-serv">
+    <section className="otros-serv" id="otros-servicios">
       <div className="container sec-head-wrap">
         <div className="sec-head">
           <h2>Otros Servicios <em>Contables</em></h2>
