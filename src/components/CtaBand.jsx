@@ -58,6 +58,7 @@ export default function CtaBand() {
         const data = await res.json();
         if (data.success) {
           setSuccess(true);
+          window.gtagConversion?.();
           setForm({ nombre: '', email: '', mensaje: '', whatsapp: '', ruc: '' });
           setCaptchaToken('');
           recaptchaRef.current?.reset();

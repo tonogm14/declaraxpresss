@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
 
-const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
-const GTM_ID = import.meta.env.VITE_GTM_ID;
-const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID;
+const GA_ID           = import.meta.env.VITE_GA_MEASUREMENT_ID;
+const GTM_ID          = import.meta.env.VITE_GTM_ID;
+const META_PIXEL_ID   = import.meta.env.VITE_META_PIXEL_ID;
 const TIKTOK_PIXEL_ID = import.meta.env.VITE_TIKTOK_PIXEL_ID;
-const LINKEDIN_PARTNER_ID = import.meta.env.VITE_LINKEDIN_PARTNER_ID;
+const LINKEDIN_ID     = import.meta.env.VITE_LINKEDIN_PARTNER_ID;
+const GADS_ID         = import.meta.env.VITE_GADS_ID;
+const GADS_LABEL      = import.meta.env.VITE_GADS_CONVERSION_LABEL;
 
 function loadScript(src) {
   const s = document.createElement('script');
-  s.src = src;
-  s.async = true;
+  s.src = src; s.async = true;
   document.head.appendChild(s);
 }
 
@@ -19,9 +20,20 @@ function inlineScript(code) {
   document.head.appendChild(s);
 }
 
+// Helper global: llama gtag('event','conversion') desde cualquier componente
+// Uso: window.gtagConversion?.()
+function registerConversionHelper() {
+  window.gtagConversion = () => {
+    if (!GADS_ID) return;
+    const send_to = GADS_LABEL ? `${GADS_ID}/${GADS_LABEL}` : GADS_ID;
+    window.gtag?.('event', 'conversion', { send_to });
+  };
+}
+
 export default function Analytics() {
   useEffect(() => {
-    // Google Tag Manager
+
+    // ── Google Tag Manager ─────────────────────────────────────
     if (GTM_ID) {
       inlineScript(
         `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});` +
@@ -31,17 +43,20 @@ export default function Analytics() {
       );
     }
 
-    // Google Analytics 4
-    if (GA_ID) {
-      loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`);
-      inlineScript(
-        `window.dataLayer=window.dataLayer||[];` +
-        `function gtag(){dataLayer.push(arguments)}` +
-        `gtag('js',new Date());gtag('config','${GA_ID}');`
-      );
+    // ── Google Analytics 4 + Google Ads (comparten gtag.js) ───
+    const primaryId = GA_ID || GADS_ID;
+    if (primaryId) {
+      loadScript(`https://www.googletagmanager.com/gtag/js?id=${primaryId}`);
+      let config = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());`;
+      if (GA_ID)   config += `gtag('config','${GA_ID}');`;
+      if (GADS_ID) config += `gtag('config','${GADS_ID}');`;
+      inlineScript(config);
     }
 
-    // Meta (Facebook) Pixel
+    // ── Google Ads conversion helper ───────────────────────────
+    registerConversionHelper();
+
+    // ── Meta (Facebook) Pixel ──────────────────────────────────
     if (META_PIXEL_ID) {
       inlineScript(
         `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?` +
@@ -53,7 +68,7 @@ export default function Analytics() {
       );
     }
 
-    // TikTok Pixel
+    // ── TikTok Pixel ───────────────────────────────────────────
     if (TIKTOK_PIXEL_ID) {
       inlineScript(
         `!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];` +
@@ -69,15 +84,16 @@ export default function Analytics() {
       );
     }
 
-    // LinkedIn Insight Tag
-    if (LINKEDIN_PARTNER_ID) {
+    // ── LinkedIn Insight Tag ───────────────────────────────────
+    if (LINKEDIN_ID) {
       inlineScript(
-        `_linkedin_partner_id="${LINKEDIN_PARTNER_ID}";` +
+        `_linkedin_partner_id="${LINKEDIN_ID}";` +
         `window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];` +
         `window._linkedin_data_partner_ids.push(_linkedin_partner_id);`
       );
       loadScript('https://snap.licdn.com/li.lms-analytics/insight.min.js');
     }
+
   }, []);
 
   if (!GTM_ID) return null;
@@ -86,8 +102,7 @@ export default function Analytics() {
     <noscript>
       <iframe
         src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-        height="0"
-        width="0"
+        height="0" width="0"
         style={{ display: 'none', visibility: 'hidden' }}
         title="GTM"
       />
