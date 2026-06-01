@@ -1237,7 +1237,6 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .footer-copy p { font-size: 13px; color: rgba(255,255,255,0.5); margin: 4px 0; }
-}
 .footer-simple {
   text-align: center;
   padding-bottom: 48px;
