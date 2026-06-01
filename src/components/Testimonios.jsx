@@ -40,17 +40,19 @@ const testimonials = [
 ];
 
 const VISIBLE = 3;
-const MAX = testimonials.length - VISIBLE;
 
 export default function Testimonios() {
   const [idx, setIdx] = useState(0);
   const [step, setStep] = useState(0);
   const wrapRef = useRef(null);
+  const isMobile = () => window.innerWidth <= 640;
+  const maxIdx = () => isMobile() ? testimonials.length - 1 : testimonials.length - VISIBLE;
 
   const calcStep = useCallback(() => {
     if (wrapRef.current) {
       const w = wrapRef.current.offsetWidth;
-      setStep((w - 32) / 3 + 16);
+      const mobile = window.innerWidth <= 640;
+      setStep(mobile ? w + 16 : (w - 32) / 3 + 16);
     }
   }, []);
 
@@ -61,7 +63,7 @@ export default function Testimonios() {
   }, [calcStep]);
 
   const prev = () => setIdx(i => Math.max(0, i - 1));
-  const next = () => setIdx(i => Math.min(MAX, i + 1));
+  const next = () => setIdx(i => Math.min(maxIdx(), i + 1));
 
   return (
     <section className="testi container">
@@ -95,7 +97,7 @@ export default function Testimonios() {
           </svg>
         </button>
         <div className="testi-dots">
-          {Array.from({ length: MAX + 1 }).map((_, i) => (
+          {Array.from({ length: maxIdx() + 1 }).map((_, i) => (
             <button key={i} className={`testi-dot${i === idx ? ' active' : ''}`} onClick={() => setIdx(i)} aria-label={`Ir a ${i + 1}`} />
           ))}
         </div>
