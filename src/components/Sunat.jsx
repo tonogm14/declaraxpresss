@@ -22,7 +22,7 @@ export default function Sunat() {
     <section className="sunat-alert">
       <div className="container sec-head-wrap">
         <div className="sec-head">
-          <h2>¿Recibiste una comunicación de <em>SUNAT</em> o de <em>SUNAFIL</em>?</h2>
+          <h2>¿Recibiste una comunicación<br/>de <em>SUNAT</em> o de <em>SUNAFIL</em>?</h2>
         </div>
       </div>
       <div className="container sunat-inner">

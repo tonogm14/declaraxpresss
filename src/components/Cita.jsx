@@ -3,7 +3,7 @@ export default function Cita() {
     <section className="cita">
       <div className="container cita-inner">
         <div className="cita-l">
-          <h3 className="cita-h">Agenda una cita.</h3>
+          <h3 className="cita-h">Agenda una <em>cita</em>.</h3>
           <p className="cita-tagline">
             Resolvemos tus <span className="c-navy">dudas</span> y <span className="c-coral">consultas</span>.
           </p>
