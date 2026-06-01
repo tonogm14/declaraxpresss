@@ -18,8 +18,8 @@ export default function Nav() {
         </a>
         <div className="nav-links">
           <a href="#somos">Nosotros</a>
-          <a href="#proceso">Proceso</a>
           <a href="#planes">Planes</a>
+          <a href="#pasos">Proceso</a>
           <a href="#otros-servicios">Servicios</a>
           <a href="#contacto">Contacto</a>
         </div>

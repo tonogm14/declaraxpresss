@@ -28,7 +28,7 @@ export default function Pasos() {
   const { num, color, title, desc } = pasos[idx];
 
   return (
-    <section className="pasos">
+    <section className="pasos" id="pasos">
       <div className="container pasos-inner">
         <h3 className="pasos-title">3 simples pasos para <em>trabajar juntos</em>.</h3>
 

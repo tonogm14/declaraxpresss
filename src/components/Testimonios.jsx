@@ -68,7 +68,6 @@ export default function Testimonios() {
   return (
     <section className="testi container">
       <div className="testi-head">
-        <span className="eyebrow"><span className="dot"></span>Testimonios</span>
         <h3>¿Qué opinan <em>de nosotros</em>?</h3>
         <p>Conoce lo que dicen nuestros clientes sobre el servicio, el soporte y el éxito que han alcanzado.</p>
       </div>
@@ -81,7 +80,7 @@ export default function Testimonios() {
           {testimonials.map(({ cls, quote, author, role }, i) => (
             <div key={i} className={`testi-card ${cls}`}>
               <div className="body">
-                <p className="quote"><span className="qm">"</span>{quote}"</p>
+                <p className="quote"><span className="qm">“</span>{quote}<span className="qm qm-close">”</span></p>
                 <div className="author">{author}</div>
                 <div className="role">{role}</div>
               </div>

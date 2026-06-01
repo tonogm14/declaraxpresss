@@ -1010,10 +1010,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .testi-card .body { padding: 24px 22px 26px; }
 .testi-card .qm {
-  font-family: var(--font-display); font-style: italic;
-  font-size: 18px; line-height: 1; color: var(--coral);
-  margin-right: 2px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--coral);
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 6px;
 }
+.testi-card .qm-close { margin-left: 4px; margin-right: 0; }
 .testi-card .quote { font-size: 13.5px; line-height: 1.5; color: var(--ink-700); margin: 6px 0 14px; }
 .testi-card .author { font-size: 12px; font-weight: 600; color: var(--navy); letter-spacing: -0.005em; }
 .testi-card .role { font-size: 11px; color: var(--ink-500); }
