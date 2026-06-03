@@ -18,7 +18,7 @@ export default function Somos() {
     <section className="somos" id="somos">
       <div className="container">
         <div className="sec-head">
-          <h2>¿Por qué <em>elegirnos</em>?</h2>
+          <h2>¿Qué <em>hacemos</em>?</h2>
         </div>
         <div className="somos-grid">
           <div className="somos-photo">
@@ -37,9 +37,9 @@ export default function Somos() {
           </div>
 
           <div className="somos-r">
-            <h3 className="somos-sub">Somos un equipo con <em>experiencia</em> que quiere ser parte de tu éxito.</h3>
+            <h3 className="somos-sub">En Declara Xpress.com queremos <em>colaborar con tu empresa</em> y ser parte de tu éxito.</h3>
             <p className="body">
-              Queremos colaborar con tu empresa y ser parte de tu éxito, asegurandote una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT.
+              Te aseguramos una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT. Nuestros planes son ideados para cualquier tipo de empresa, desde las más pequeñas hasta empresas medianas.
             </p>
             <ul className="somos-items">
               {items.map(item => (

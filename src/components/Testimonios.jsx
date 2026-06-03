@@ -79,8 +79,7 @@ export default function Testimonios() {
     <section className="testi">
       <div className="container">
       <div className="testi-head">
-        <h3>¿Qué opinan <em>de nosotros</em>?</h3>
-        <p>Conoce lo que dicen nuestros clientes sobre el servicio, el soporte y el éxito que han alcanzado.</p>
+        <h3>Lo que dicen <em>nuestros clientes</em>.</h3>
       </div>
 
       <div className="testi-carousel-wrap" ref={wrapRef} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>

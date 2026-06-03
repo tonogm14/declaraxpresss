@@ -5,7 +5,9 @@ export default function Footer() {
         <p>Contabilidad inteligente con IA.<br/>Precisión, integridad y estrategia para tu negocio.</p>
         <p>© 2026 Declara Xpress · Todos los derechos reservados.</p>
       </div>
-      <p className="footer-wordmark">DECLARAXPRESS</p>
+      <div className="footer-logo-wrap">
+        <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="footer-logo-bottom" />
+      </div>
     </footer>
   );
 }

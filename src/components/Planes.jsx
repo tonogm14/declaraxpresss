@@ -10,7 +10,7 @@ const CheckIcon = () => (
 const plans = [
   {
     cls: 'plan-empr',
-    name: 'Emprendedor',
+    name: 'Emprendedor Inicial',
     tag: 'Negocios con ventas anuales de hasta S/ 100,000. Máximo 50 comprobantes por mes.',
     price: '170',
     cta: { label: 'Elegir plan', cls: 'btn-ghost', msgEnv: 'VITE_WA_MSG_EMPR' },
@@ -25,7 +25,7 @@ const plans = [
   },
   {
     cls: 'plan-plata',
-    name: 'MYPE Plata',
+    name: 'Emprendedor Avanzado',
     tag: 'Negocios con ventas anuales de hasta S/ 250,000. Máximo 150 comprobantes por mes.',
     price: '270',
     cta: { label: 'Elegir plan', cls: 'btn-navy', msgEnv: 'VITE_WA_MSG_PLATA' },
@@ -123,11 +123,8 @@ export default function Planes() {
     <section className="planes" id="planes">
       <div className="planes-band">
         <div className="planes-band-inner container">
-          <div className="pill-wrap">
-            <span className="pill">Planes &amp; precios</span>
-          </div>
-          <h2>Elige el plan que <em>crece</em> contigo.</h2>
-          <p>Cuatro planes pensados para cada etapa. Cambia cuando quieras, sin costo de migración ni compromiso de permanencia.</p>
+          <h2>Elige tu <em>Plan Contable</em></h2>
+          <p>Tenemos planes acordes a cada empresa. Consulta por tu plan.</p>
         </div>
       </div>
       <div className="planes-grid">
