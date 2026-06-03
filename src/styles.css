@@ -222,12 +222,12 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(28px, 3.6vw, 56px);
-  line-height: 1.16;
-  letter-spacing: -0.02em;
+  font-size: clamp(32px, 4vw, 62px);
+  line-height: 1.14;
+  letter-spacing: -0.022em;
   margin: 0 auto 20px;
   color: #fff;
-  max-width: 32ch;
+  max-width: 28ch;
 }
 .hero h1 em {
   font-family: var(--font-display);
