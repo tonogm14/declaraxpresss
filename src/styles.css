@@ -144,10 +144,9 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
    NAV
    ========================================================= */
 .nav {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: absolute; top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 0 32px;
-  transition: background var(--dur), box-shadow var(--dur);
 }
 .nav-inner {
   max-width: 1180px; margin: 0 auto;
@@ -222,10 +221,10 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(32px, 4vw, 62px);
-  line-height: 1.14;
-  letter-spacing: -0.022em;
-  margin: 0 auto 20px;
+  font-size: clamp(36px, 4.2vw, 66px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin: 0 auto 28px;
   color: #fff;
   max-width: 28ch;
 }
