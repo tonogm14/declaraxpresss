@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer footer--green">
       <div className="footer-logo-wrap">
-        <img src="/assets/logo-declara.png" alt="Declara Xpress" className="footer-logo-bottom" />
+        <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="footer-logo-bottom" />
       </div>
       <div className="footer-copy">
         <p>Contabilidad inteligente con IA.<br/>Precisión, integridad y estrategia para tu negocio.</p>
