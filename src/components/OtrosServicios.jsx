@@ -25,7 +25,7 @@ export default function OtrosServicios() {
     <section className="otros-serv" id="otros-servicios">
       <div className="container sec-head-wrap">
         <div className="sec-head">
-          <h2>Otros Servicios <em>Contables</em></h2>
+          <h2>Otros Servicios Contables</h2>
         </div>
       </div>
       <div className="container otros-serv-inner">

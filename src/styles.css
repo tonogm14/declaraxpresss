@@ -1153,7 +1153,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   object-fit: cover; display: block;
 }
 .otros-serv-r .eyebrow { margin-bottom: 16px; }
-.otros-serv-r h2 {
+.otros-serv-r h2, .otros-serv .sec-head h2 {
   font-family: var(--font-display);
   font-weight: 800;
   font-style: normal;
@@ -1163,7 +1163,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   color: var(--navy);
   margin: 0 0 28px;
 }
-.otros-serv-r h2 em { font-style: normal; font-weight: 800; color: var(--navy); }
+.otros-serv .sec-head h2 em { font-style: normal; font-weight: 800; color: var(--navy); }
 .otros-serv-list {
   list-style: none; padding: 0; margin: 0;
   display: flex; flex-direction: column; gap: 10px;
