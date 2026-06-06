@@ -29,7 +29,7 @@ export default function Formaliza() {
       </div>
       <div className="container formaliza-inner">
         <div className="formaliza-img">
-          <img src="/assets/formaliza.jpg" alt="Constituye tu empresa hoy" />
+          <img src="/assets/empresa.jpg" alt="Constituye tu empresa hoy" />
         </div>
         <div className="formaliza-r">
           <h3 className="sec-sub">Formaliza fácil y rápido sin moverte de tu negocio.</h3>
