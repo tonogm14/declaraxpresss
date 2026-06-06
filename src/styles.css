@@ -780,7 +780,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   background: var(--peach);
   border-color: rgba(0,168,107,0.22);
 }
-.plan-diam .plan-name { color: var(--coral-600); }
+.plan-diam .plan-name { color: var(--navy); }
 
 /* =========================================================
    BENTO — Servicios with mixed colorful tiles
