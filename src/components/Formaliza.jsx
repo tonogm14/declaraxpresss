@@ -24,7 +24,7 @@ export default function Formaliza() {
     <section className="formaliza">
       <div className="container sec-head-wrap">
         <div className="sec-head sec-head--light">
-          <h2>Constituye tu <em>empresa</em></h2>
+          <h2>Constituye tu empresa</h2>
         </div>
       </div>
       <div className="container formaliza-inner">

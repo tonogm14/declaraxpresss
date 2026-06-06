@@ -968,6 +968,8 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .formaliza-img { border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--sh-lg); }
 .formaliza-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .formaliza-r .eyebrow { margin-bottom: 16px; }
+.formaliza .sec-head h2 { color: #fff; font-weight: 800; font-style: normal; }
+.formaliza .sec-head h2 em { font-style: normal; font-weight: 800; color: #fff; }
 .formaliza-r h2 {
   font-family: var(--font-display);
   font-weight: 800;
