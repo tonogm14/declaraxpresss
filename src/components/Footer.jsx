@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer footer--green">
+    <footer className="footer">
       <div className="footer-logo-wrap">
         <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="footer-logo-bottom" />
       </div>
