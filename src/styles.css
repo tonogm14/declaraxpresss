@@ -708,17 +708,18 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .planes-band h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 900;
   font-size: clamp(28px, 3.6vw, 52px);
   line-height: 1.03;
   letter-spacing: -0.028em;
   margin: 16px 0 14px;
   text-align: center;
   white-space: nowrap;
+  color: var(--coral-300);
   margin-left: auto; margin-right: auto;
 }
-.planes-band h2 em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: var(--coral-300); }
-.planes-band p { text-align: center; max-width: 56ch; margin: 0 auto; font-size: 16px; color: rgba(255,255,255,0.7); }
+.planes-band h2 em { font-style: normal; font-weight: 900; color: var(--coral-300); }
+.planes-band p { text-align: center; max-width: 56ch; margin: 0 auto; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92); }
 .planes-band .pill-wrap { text-align: center; }
 
 .planes-grid {
@@ -746,7 +747,8 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .plan-name {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
+  font-weight: 800;
   font-size: 24px;
   color: var(--navy);
   margin-bottom: 4px;
@@ -966,14 +968,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .formaliza-r .eyebrow { margin-bottom: 16px; }
 .formaliza-r h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(30px, 3.8vw, 52px);
   line-height: 1.05;
   letter-spacing: -0.028em;
   color: #fff;
   margin: 0 0 12px;
 }
-.formaliza-r h2 em { font-style: italic; font-weight: 400; color: var(--coral-300); }
+.formaliza-r h2 em { font-style: normal; font-weight: 800; color: #fff; }
 .formaliza-sub { font-size: 16px; color: rgba(255,255,255,0.72); margin: 0 0 8px; }
 .formaliza-precio { font-size: 15px; color: rgba(255,255,255,0.6); margin: 0 0 20px; }
 .formaliza-precio strong { color: var(--coral-300); font-weight: 700; }
@@ -1002,14 +1005,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .sunat-r .eyebrow { margin-bottom: 16px; }
 .sunat-r h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(26px, 3.2vw, 44px);
   line-height: 1.06;
   letter-spacing: -0.025em;
   color: var(--navy);
   margin: 0 0 16px;
 }
-.sunat-r h2 em { font-style: italic; font-weight: 400; color: var(--coral); }
+.sunat-r h2 em { font-style: normal; font-weight: 800; color: var(--navy); }
 .sunat-intro { font-size: 15px; line-height: 1.55; color: var(--ink-500); margin: 0 0 20px; }
 .sunat-intro strong { color: var(--navy); }
 .sunat-steps { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 10px; }
@@ -1027,14 +1031,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .testi-head { text-align: center; margin-bottom: 56px; }
 .testi-head h2, .testi-head h3 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(36px, 4.4vw, 58px);
   line-height: 1.03;
   letter-spacing: -0.028em;
   margin: 14px 0 12px;
   color: var(--navy);
 }
-.testi-head h2 em, .testi-head h3 em { font-family: var(--font-display); font-style: italic; font-weight: 400; color: var(--coral); }
+.testi-head h2 em, .testi-head h3 em { font-style: normal; font-weight: 800; color: var(--navy); }
 .testi-head p { font-size: 16.5px; color: var(--ink-500); max-width: 50ch; margin: 0 auto; }
 
 .testi-carousel-wrap { overflow: hidden; margin-bottom: 28px; }
@@ -1097,14 +1102,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .cita-h, .cita-l h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(36px, 4.5vw, 64px);
   line-height: 1.04;
   letter-spacing: -0.028em;
   color: var(--navy);
   margin: 0 0 16px;
 }
-.cita-h em { font-style: italic; font-weight: 400; color: var(--coral); }
+.cita-h em { font-style: normal; font-weight: 800; color: var(--navy); }
 .cita-tagline {
   font-family: var(--font-display);
   font-size: clamp(22px, 2.8vw, 36px);
@@ -1147,14 +1153,15 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .otros-serv-r .eyebrow { margin-bottom: 16px; }
 .otros-serv-r h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
   font-size: clamp(30px, 3.6vw, 48px);
   line-height: 1.06;
   letter-spacing: -0.025em;
   color: var(--navy);
   margin: 0 0 28px;
 }
-.otros-serv-r h2 em { font-style: italic; font-weight: 400; color: var(--coral); }
+.otros-serv-r h2 em { font-style: normal; font-weight: 800; color: var(--navy); }
 .otros-serv-list {
   list-style: none; padding: 0; margin: 0;
   display: flex; flex-direction: column; gap: 10px;
@@ -1292,16 +1299,17 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 .footer {
   background: var(--navy);
   color: #fff;
-  padding: 12px 0 0;
-  position: relative;
-  overflow: hidden;
+  padding: 40px 0 24px;
+  text-align: center;
 }
+.footer--green { background: var(--coral); }
+.footer-logo-wrap { margin-bottom: 20px; }
+.footer-logo-bottom { height: 72px; width: auto; display: inline-block; }
 .footer-copy {
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 0 20px;
 }
-.footer-copy p { font-size: 13px; color: rgba(255,255,255,0.5); margin: 4px 0; }
+.footer-copy p { font-size: 14px; color: rgba(255,255,255,0.9); margin: 4px 0; }
 .footer-simple {
   text-align: center;
   padding-bottom: 48px;

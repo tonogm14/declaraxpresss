@@ -38,6 +38,7 @@ export default function OtrosServicios() {
               <li key={item}><CheckIcon />{item}</li>
             ))}
           </ul>
+          <a className="btn btn-coral" href="#contacto" style={{ marginTop: '28px', display: 'inline-flex' }}>Solicitar Asesoría</a>
         </div>
       </div>
     </section>
