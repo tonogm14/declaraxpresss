@@ -5,6 +5,7 @@ const items = [
   'Declaración oportuna de impuestos SUNAT',
   'ERP contable con IA y sistema SIRE con certificación de ciberseguridad',
   'Honorarios a la medida de tu negocio',
+  'Te ayudamos a evitar sanciones y multas de SUNAT.',
 ];
 
 const CheckIcon = () => (
@@ -38,7 +39,7 @@ export default function Somos() {
 
           <div className="somos-r">
             <p className="body">
-              En Declara Xpress.com queremos colaborar con tu empresa y ser parte de tu éxito. Te aseguramos una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos. Te ayudamos a evitar sanciones y multas de SUNAT.
+              En Declara Xpress.com queremos colaborar con tu empresa y ser parte de tu éxito. Te aseguramos una contabilidad optimizada con IA en tus operaciones y una oportuna declaración de impuestos.
             </p>
             <ul className="somos-items">
               {items.map(item => (

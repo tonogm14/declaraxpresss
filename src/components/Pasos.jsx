@@ -40,7 +40,7 @@ export default function Pasos() {
   return (
     <section className="pasos" id="pasos">
       <div className="container pasos-inner">
-        <h3 className="pasos-title">3 simples pasos para <em>trabajar juntos</em>.</h3>
+        <h3 className="pasos-title">En 3 pasos simples para trabajar juntos</h3>
 
         {/* Desktop — fila estática */}
         <div className="pasos-row">
