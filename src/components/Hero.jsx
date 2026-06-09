@@ -1,7 +1,13 @@
 export default function Hero() {
   return (
     <header className="hero" id="top">
-      <div className="hero-left">
+      <div
+        className="hero-bg-zoom"
+        style={{ backgroundImage: 'url(/assets/2151908068.jpg)' }}
+      ></div>
+      <div className="hero-overlay"></div>
+
+      <div className="hero-content">
         <img src="/assets/declara-xpress-logo.png" alt="Declara Xpress" className="hero-logo" />
         <h1>Contabilidad Optimizada con IA para mypes, Emprendedores y Profesionales Independientes.</h1>
         <p className="hero-subtitle">En DeclaraXpress.com tenemos planes de servicios contables para tu negocio desde <strong>S/170 al mes</strong>, incluido IGV.</p>
@@ -13,9 +19,6 @@ export default function Hero() {
           </svg>
           info@declaraxpress.com
         </a>
-      </div>
-      <div className="hero-right">
-        <img src="/assets/2151908068.jpg" alt="" className="hero-img" />
       </div>
     </header>
   );
