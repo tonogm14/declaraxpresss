@@ -3,7 +3,7 @@ export default function Hero() {
     <header className="hero" id="top">
       <div
         className="hero-bg-zoom"
-        style={{ backgroundImage: 'url(/assets/hero-declara-difuminado.jpg)' }}
+        style={{ backgroundImage: 'url(/assets/hero-declara-2.jpg)' }}
       ></div>
       {/* Topbar: logo izq, email der */}
       <div className="hero-topbar">
