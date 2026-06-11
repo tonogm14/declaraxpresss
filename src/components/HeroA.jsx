@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function HeroA() {
   return (
     <header className="hero" id="top">
       <div

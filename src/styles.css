@@ -289,6 +289,24 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
 }
 .hero-email:hover { color: #fff; }
 
+/* =========================================================
+   HERO B — navy sólido izq + fade a imagen derecha
+   ========================================================= */
+/* Overlay: navy sólido en la izquierda, desvanece hacia la derecha */
+.hero-overlay--b {
+  background: linear-gradient(
+    to right,
+    rgba(10, 40, 108, 0.94) 0%,
+    rgba(10, 40, 108, 0.94) 36%,
+    rgba(10, 40, 108, 0.55) 58%,
+    rgba(10, 40, 108, 0.00) 76%
+  );
+}
+/* Texto confinado al 45% izquierdo */
+.hero-content--b {
+  max-width: 620px;
+}
+
 /* Hero stage — center map + person + floating cards */
 .hero-stage {
   position: relative;
