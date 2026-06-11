@@ -279,7 +279,7 @@ h1 em, h2 em, h3 em, h4 em { font-family: var(--font-display); font-style: itali
   font-weight: 500;
   line-height: 1.5;
   color: rgba(255,255,255,0.90);
-  max-width: 58ch;
+  max-width: 44ch;
   margin: 0 0 32px;
 }
 .hero-subtitle strong { color: #fff; font-weight: 700; }
